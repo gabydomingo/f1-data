@@ -27,18 +27,11 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: 📦 Instalar Dependencias
-        run: |
-          pip install -r requirements.txt
-
       - name: 📁 Preparar sistema de archivos
         run: |
           mkdir -p data/raw
           mkdir -p data/silver
           mkdir -p models
-
-      - name: 🏗️ Ejecutar Ingesta (Bronze Layer)
-        run: python src/ingesta_carreras.py
 
       - name: 🏗️ Ejecutar Ingesta (Bronze Layer)
         run: python src/ingesta_carreras.py
