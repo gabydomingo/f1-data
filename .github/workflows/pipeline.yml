@@ -8,43 +8,53 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: 📥 Clonar el repositorio
-      uses: actions/checkout@v4
+      - name: 📥 Clonar el repositorio
+        uses: actions/checkout@v4
 
-    - name: 🐍 Configurar Python 3.10
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.10'
-        cache: 'pip'
+      - name: 🐍 Configurar Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
 
-    - name: ☕ Configurar Java 17
-      uses: actions/setup-java@v4
-      with:
-        distribution: 'temurin'
-        java-version: '17'
+      - name: ☕ Configurar Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
 
-    - name: 📦 Instalar Dependencias
-      run: |
-        pip install -r requirements.txt
+      - name: 📦 Instalar Dependencias
+        run: |
+          pip install -r requirements.txt
 
-    - name: 🏗️ Ejecutar Ingesta (Bronze Layer)
-      run: python src/ingesta_carreras.py
+      - name: 🏗️ Ejecutar Ingesta (Bronze Layer)
+        run: python src/ingesta_carreras.py
 
-    - name: ⚙️ Ejecutar Transformación (Silver Layer)
-      run: python src/transformacion_carrera.py
+      - name: ⚙️ Ejecutar Transformación (Silver Layer)
+        run: python src/transformacion_carrera.py
 
-    - name: 🧠 Entrenar y Empaquetar Modelo
-      run: python src/entrenamiento_modelo.py
+      - name: 🧠 Entrenar y Empaquetar Modelo
+        run: python src/entrenamiento_modelo.py
 
-    - name: ☁️ Configurar Credenciales AWS
-      uses: aws-actions/configure-aws-credentials@v4
-      with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: us-east-2
+      - name: 🔍 Verificar Archivos Generados
+        run: |
+          echo "Contenido del directorio actual:"
+          ls -la
+          echo "Contenido de ./data:"
+          ls -la ./data || echo "El directorio data NO EXISTE"
+          echo "Contenido de ./models:"
+          ls -la ./models || echo "El directorio models NO EXISTE"
 
-    - name: 🚀 Sincronizar Data y Modelos a S3
-      run: |
-        mkdir -p data/raw data/silver data/cache models
-        aws s3 sync data/ s3://f1-telemetry-datalake-gabriel/data/ --exclude "cache/*"
-        aws s3 sync models/ s3://f1-telemetry-datalake-gabriel/models/
+      - name: ☁️ Configurar Credenciales AWS
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
+    
+      - name: 🚀 Sincronizar Data y Modelos a S3
+        run: |
+          echo "Subiendo telemetría a la capa Silver..."
+          aws s3 sync ./data s3://f1-telemetry-datalake-gabriel/data --no-progress
+          echo "Subiendo modelo XGBoost..."
+          aws s3 sync ./models s3://f1-telemetry-datalake-gabriel/models --no-progress
