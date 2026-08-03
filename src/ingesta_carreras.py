@@ -10,8 +10,8 @@ import fastf1
 import pandas as pd
 
 # Path configurations
-CACHE_DIR = os.path.abspath("../data/cache/")
-RAW_DATA_DIR = os.path.abspath("../data/raw/")
+CACHE_DIR = "data/cache/"
+RAW_DATA_DIR = "data/raw/"
 
 # Ensure directories exist
 os.makedirs(CACHE_DIR, exist_ok=True)

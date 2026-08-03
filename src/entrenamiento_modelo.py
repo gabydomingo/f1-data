@@ -12,8 +12,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error
 
 # Paths
-SILVER_DIR = os.path.abspath("../data/silver/2024_silverstone_R_silver.parquet")
-MODEL_DIR = os.path.abspath("../models/")
+SILVER_DIR = "data/silver/2024_silverstone_R_silver.parquet"
+MODEL_DIR = "models/"
 
 def train_and_export_model():
     print("INFO: Loading Silver layer data...")

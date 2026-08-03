@@ -9,9 +9,9 @@ import os
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
 
-# Absolute paths for local Data Lake simulation
-RAW_PATH = os.path.abspath("../data/raw/2024_silverstone_R_raw.parquet")
-SILVER_DIR = os.path.abspath("../data/silver/")
+
+RAW_PATH = "data/raw/2024_silverstone_R_raw.parquet"
+SILVER_DIR = "data/silver/"
 
 def transform_race_data():
     """
