@@ -28,7 +28,7 @@ jobs:
         pip install -r requirements.txt
 
     - name: 🏗️ Ejecutar Ingesta (Bronze Layer)
-      run: python src/ingesta_carrera.py
+      run: python src/ingesta_carreras.py
 
     - name: ⚙️ Ejecutar Transformación (Silver Layer)
       run: python src/transformacion_carrera.py
