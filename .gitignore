@@ -17,3 +17,6 @@ data/cache/
 # Archivos del sistema operativo
 .DS_Store
 Thumbs.db
+
+#Claves json de cloud
+*.json
