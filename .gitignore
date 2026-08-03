@@ -1,0 +1,19 @@
+# Entornos Virtuales
+venv/
+env/
+.env
+
+# Caché de Python y Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Datos y Caché de FastF1
+data/cache/
+*.parquet
+*.csv
+*.json
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db

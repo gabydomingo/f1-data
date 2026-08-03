@@ -1,0 +1,6 @@
+fastf1==3.8.3
+pandas
+pyarrow
+pyspark
+scikit-learn
+xgboost
