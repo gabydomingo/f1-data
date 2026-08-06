@@ -4,7 +4,7 @@ Plataforma de análisis de telemetría de Fórmula 1 construida sobre un pipelin
 Toma el cronometraje oficial de la FIA, lo procesa en un data lake de tres capas y lo expone en un
 dashboard donde se puede recorrer cualquier vuelta de cualquier piloto, metro a metro.
 
-**[Ver el dashboard](https://TU-URL.vercel.app)**
+**[Ver el dashboard](https://f1-data-two.vercel.app)**
 
 <!-- Reemplazar por una captura del dashboard en funcionamiento -->
 ![Dashboard](docs/screenshot.png)
@@ -208,5 +208,5 @@ Este proyecto no está asociado ni respaldado por la Fórmula 1, la FIA ni ningu
 nombres de equipos y pilotos son marcas de sus respectivos titulares, usadas aquí con fines
 informativos y educativos.
 
-Modelo 3D: "2026 Red Bull Racing RB22" por AUTOR_DEL_MODELO, publicado en Sketchfab bajo licencia
+Modelo 3D: "2026 Red Bull Racing RB22" por Dave Love SketchFab (https://sketchfab.com/3d-models/2026-red-bull-racing-rb22-8e5a68a7991c4a46bd66a879c060b3c5), publicado en Sketchfab bajo licencia
 CC BY 4.0. Optimizado para web con Draco y WebP.
