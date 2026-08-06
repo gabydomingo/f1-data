@@ -100,6 +100,13 @@ type Props = {
   telemetryRef: React.MutableRefObject<TelemetryPointExt | null>;
 };
 
+type ViewerProps = Props & {
+  /** Color de la escudería del piloto elegido. Tiñe la luz de acento y el
+   *  panel lateral del entorno: cambiar de equipo se nota sin necesitar un
+   *  modelo 3D distinto por escudería. */
+  colorEquipo?: string;
+};
+
 function buscarHotspot(obj: Object3D): { hotspot: Hotspot; node: Object3D } {
   let node: Object3D | null = obj;
   while (node) {
@@ -548,7 +555,7 @@ function ShiftLights({ telemetryRef }: Props) {
   );
 }
 
-function CarViewer({ telemetryRef }: Props) {
+function CarViewer({ telemetryRef, colorEquipo = "#E10600" }: ViewerProps) {
   const [sel, setSel] = useState<{ hotspot: Hotspot } | null>(null);
   const [target, setTarget] = useState<Object3D | null>(null);
   const [root, setRoot] = useState<Object3D | null>(null);
@@ -584,14 +591,14 @@ function CarViewer({ telemetryRef }: Props) {
         <ambientLight intensity={0.45} />
         <hemisphereLight args={["#8ea6c0", "#101010", 0.7]} />
         <directionalLight position={[5, 8, 4]} intensity={2.2} />
-        <directionalLight position={[-5, 3, -4]} intensity={1} color="#E10600" />
+        <directionalLight position={[-5, 3, -4]} intensity={1.1} color={colorEquipo} />
 
         {/* Entorno generado con estos paneles: da los reflejos que la
             carrocería necesita, sin descargar ningún HDRI. */}
-        <Environment resolution={256} frames={1}>
+        <Environment key={colorEquipo} resolution={256} frames={1}>
           <Lightformer form="rect" intensity={6} position={[0, 6, 0]} rotation={[Math.PI / 2, 0, 0]} scale={[12, 6, 1]} />
           <Lightformer form="rect" intensity={4} position={[-6, 2, 2]} rotation={[0, Math.PI / 2, 0]} scale={[8, 4, 1]} />
-          <Lightformer form="rect" intensity={3} color="#E10600" position={[6, 2, -2]} rotation={[0, -Math.PI / 2, 0]} scale={[8, 3, 1]} />
+          <Lightformer form="rect" intensity={3.4} color={colorEquipo} position={[6, 2, -2]} rotation={[0, -Math.PI / 2, 0]} scale={[8, 3, 1]} />
           <Lightformer form="ring" intensity={2} position={[0, 1, 8]} scale={4} />
         </Environment>
 

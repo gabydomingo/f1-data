@@ -294,7 +294,10 @@ export default function Page() {
             }
           />
           <div className="min-h-0 flex-1">
-            <CarViewer telemetryRef={telemetryRef} />
+            <CarViewer
+              telemetryRef={telemetryRef}
+              colorEquipo={piloto ? COLOR_EQUIPO[piloto.team] ?? "#E10600" : "#E10600"}
+            />
           </div>
           <div className="grid grid-cols-5 border-t border-neutral-800">
             <Kpi label="VELOCIDAD" value={Math.round(current?.speed ?? 0)} unit="km/h" />

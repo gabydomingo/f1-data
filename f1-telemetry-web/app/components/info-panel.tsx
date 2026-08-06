@@ -73,6 +73,12 @@ export default function InfoPanel({ onClose }: Props) {
             acá con fines informativos.
           </p>
           <p className="mt-2">
+            El monoplaza del visor es un modelo representativo y no cambia según la escudería
+            elegida: la iluminación de la escena sí toma su color. Las magnitudes que muestra
+            —revoluciones, DRS, frenos— son las del piloto seleccionado.
+          </p>
+
+          <p className="mt-2">
             {/* La licencia CC BY exige nombrar autor, obra y licencia. */}
             Modelo 3D:{" "}
             <a
