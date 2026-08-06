@@ -1,0 +1,41 @@
+{
+  "era": "2026",
+  "years": [
+    2026
+  ],
+  "target": "delta contra la mejor vuelta del piloto en la carrera",
+  "mae_segundos": 0.775,
+  "baseline_segundos": 0.827,
+  "vueltas_entrenamiento": 9723,
+  "vueltas_validacion": 1316,
+  "circuitos": [
+    "australian_grand_prix",
+    "austrian_grand_prix",
+    "barcelona_grand_prix",
+    "belgian_grand_prix",
+    "british_grand_prix",
+    "canadian_grand_prix",
+    "chinese_grand_prix",
+    "hungarian_grand_prix",
+    "japanese_grand_prix",
+    "miami_grand_prix",
+    "monaco_grand_prix"
+  ],
+  "holdout": "hungarian_grand_prix",
+  "features": [
+    "TyreLife",
+    "LapNumber",
+    "Stint",
+    "Compound_HARD",
+    "Compound_MEDIUM",
+    "Compound_SOFT"
+  ],
+  "importancias": {
+    "TyreLife": 0.2511,
+    "LapNumber": 0.2464,
+    "Stint": 0.16,
+    "Compound_SOFT": 0.1245,
+    "Compound_MEDIUM": 0.115,
+    "Compound_HARD": 0.1029
+  }
+}

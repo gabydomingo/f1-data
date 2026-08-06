@@ -1,66 +1,115 @@
 name: F1 Data Engineering Pipeline
 
 on:
-  workflow_dispatch: # Permite ejecutar el botón manualmente
+  workflow_dispatch:
+    inputs:
+      year:
+        description: "Temporada a procesar"
+        required: false
+        default: "2026"
+      gps:
+        description: "Circuitos separados por coma (vacío = el último disponible)"
+        required: false
+        default: ""
+  schedule:
+    # Lunes 12:00 UTC (09:00 ART). Las carreras corren el domingo.
+    - cron: "0 12 * * 1"
+
+# Si se dispara dos veces seguidas, la corrida vieja se cancela en vez de
+# pelearse por las mismas particiones de S3.
+concurrency:
+  group: f1-pipeline
+  cancel-in-progress: true
+
+permissions:
+  contents: read
 
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    env:
+      F1_YEAR: ${{ github.event.inputs.year || '2026' }}
+      F1_GPS: ${{ github.event.inputs.gps || '' }}
+      BUCKET: s3://f1-telemetry-datalake-gabriel
 
     steps:
-      - name: 📥 Clonar el repositorio
+      - name: Clonar el repositorio
         uses: actions/checkout@v4
 
-      - name: 🐍 Configurar Python 3.10
+      - name: Configurar Python 3.10
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
-          cache: 'pip'
+          python-version: "3.10"
+          cache: "pip"
 
-      - name: ☕ Configurar Java 17
+      - name: Configurar Java 17
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
-          java-version: '17'
+          distribution: "temurin"
+          java-version: "17"
 
-      - name: 📦 Instalar Dependencias
+      # Sin esto, cada corrida vuelve a bajar la sesión entera de la API de
+      # timing. Es la diferencia entre minutos y decenas de minutos.
+      - name: Restaurar cache de FastF1
+        uses: actions/cache@v4
+        with:
+          path: data/cache
+          key: fastf1-${{ env.F1_YEAR }}-${{ github.run_id }}
+          restore-keys: |
+            fastf1-${{ env.F1_YEAR }}-
+            fastf1-
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Preparar sistema de archivos
+        run: mkdir -p data/cache data/raw data/silver data/gold models
+
+      # El silver de vueltas se necesita completo para entrenar: sin esto el
+      # modelo se entrenaría solo con la carrera del fin de semana.
+      - name: Traer silver existente desde S3
         run: |
-          pip install -r requirements.txt
+          aws s3 sync $BUCKET/data/silver/laps ./data/silver/laps --no-progress || true
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: us-east-2
 
-      - name: 📁 Preparar sistema de archivos
-        run: |
-          mkdir -p data/raw
-          mkdir -p data/silver
-          mkdir -p models
-
-      - name: 🏗️ Ejecutar Ingesta (Bronze Layer)
+      - name: Ingesta (Bronze Layer)
         run: python src/ingesta_carreras.py
 
-      - name: ⚙️ Ejecutar Transformación (Silver Layer)
+      - name: Transformación (Silver Layer)
         run: python src/transformacion_carrera.py
 
-      - name: 🧠 Entrenar y Empaquetar Modelo
+      - name: Entrenar modelo
         run: python src/entrenamiento_modelo.py
 
-      - name: 🔍 Verificar Archivos Generados
-        run: |
-          echo "Contenido del directorio actual:"
-          ls -la
-          echo "Contenido de ./data:"
-          ls -la ./data || echo "El directorio data NO EXISTE"
-          echo "Contenido de ./models:"
-          ls -la ./models || echo "El directorio models NO EXISTE"
+      - name: Precalcular predicciones (Gold Layer)
+        run: python src/predicciones.py
 
-      - name: ☁️ Configurar Credenciales AWS
+      - name: Verificar salida
+        run: |
+          echo "--- silver/telemetry ---"
+          find data/silver/telemetry -name "*.parquet" | head -20
+          echo "--- gold ---"
+          ls -la data/gold || echo "sin gold"
+          echo "--- peso ---"
+          du -sh data/raw data/silver data/gold models
+
+      - name: Configurar credenciales AWS
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
-    
-      - name: 🚀 Sincronizar Data y Modelos a S3
+
+      # Sólo silver, gold y modelos. El bronze y el cache se quedan en el runner:
+      # son intermedios y el cache pesa más que todo lo demás junto.
+      - name: Sincronizar a S3
         run: |
-          echo "Subiendo telemetría a la capa Silver..."
-          aws s3 sync ./data s3://f1-telemetry-datalake-gabriel/data --no-progress
-          echo "Subiendo modelo XGBoost..."
-          aws s3 sync ./models s3://f1-telemetry-datalake-gabriel/models --no-progress
+          aws s3 sync ./data/silver $BUCKET/data/silver --no-progress \
+            --exclude "*.crc" --exclude "*_SUCCESS"
+          aws s3 sync ./data/gold $BUCKET/data/gold --no-progress
+          aws s3 sync ./models $BUCKET/models --no-progress

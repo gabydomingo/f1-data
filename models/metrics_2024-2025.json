@@ -1,0 +1,55 @@
+{
+  "era": "2024-2025",
+  "years": [
+    2024,
+    2025
+  ],
+  "target": "delta contra la mejor vuelta del piloto en la carrera",
+  "mae_segundos": 0.678,
+  "baseline_segundos": 0.814,
+  "vueltas_entrenamiento": 42528,
+  "vueltas_validacion": 1966,
+  "circuitos": [
+    "abu_dhabi_grand_prix",
+    "australian_grand_prix",
+    "austrian_grand_prix",
+    "azerbaijan_grand_prix",
+    "bahrain_grand_prix",
+    "belgian_grand_prix",
+    "british_grand_prix",
+    "canadian_grand_prix",
+    "chinese_grand_prix",
+    "dutch_grand_prix",
+    "emilia_romagna_grand_prix",
+    "hungarian_grand_prix",
+    "italian_grand_prix",
+    "japanese_grand_prix",
+    "las_vegas_grand_prix",
+    "mexico_city_grand_prix",
+    "miami_grand_prix",
+    "monaco_grand_prix",
+    "qatar_grand_prix",
+    "saudi_arabian_grand_prix",
+    "singapore_grand_prix",
+    "spanish_grand_prix",
+    "são_paulo_grand_prix",
+    "united_states_grand_prix"
+  ],
+  "holdout": "united_states_grand_prix",
+  "features": [
+    "TyreLife",
+    "LapNumber",
+    "Stint",
+    "Compound_HARD",
+    "Compound_MEDIUM",
+    "Compound_SOFT"
+  ],
+  "importancias": {
+    "TyreLife": 0.2948,
+    "Stint": 0.2582,
+    "LapNumber": 0.1976,
+    "Compound_SOFT": 0.0955,
+    "Compound_HARD": 0.0818,
+    "Compound_MEDIUM": 0.072
+  }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Las letras van como formas y no como texto: un favicon no puede
+       depender de qué fuente tenga instalado el sistema. -->
+  <rect width="64" height="64" rx="10" fill="#E10600"/>
+
+  <!-- F -->
+  <rect x="13" y="17" width="7" height="30" fill="#ffffff"/>
+  <rect x="13" y="17" width="19" height="7" fill="#ffffff"/>
+  <rect x="13" y="29" width="15" height="6" fill="#ffffff"/>
+
+  <!-- 1 -->
+  <rect x="44" y="17" width="7" height="30" fill="#ffffff"/>
+  <polygon points="44,17 44,24 36,24" fill="#ffffff"/>
+</svg>

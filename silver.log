@@ -1,0 +1,136 @@
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[Stage 1:>                                                          (0 + 1) / 1]                                                                                [Stage 3:=======================================>                   (2 + 1) / 3][Stage 5:>                                                        (0 + 16) / 17][Stage 5:===>                                                     (1 + 16) / 17][Stage 5:===========================================>             (13 + 4) / 17]                                                                                [Stage 14:>                                                       (0 + 16) / 16][Stage 14:==============>                                         (4 + 12) / 16][Stage 14:====================================================>   (15 + 1) / 16]                                                                                [Stage 23:=====>                                                  (2 + 16) / 19][Stage 23:============================================>           (15 + 4) / 19]                                                                                [Stage 32:======>                                                 (2 + 16) / 18][Stage 32:==============================================>         (15 + 3) / 18]                                                                                [Stage 41:===========>                                            (4 + 16) / 20][Stage 41:============================================>           (16 + 4) / 20]                                                                                [Stage 50:==>                                                     (1 + 16) / 19][Stage 50:====================>                                   (7 + 12) / 19]                                                                                [Stage 59:=========>                                              (3 + 15) / 18][Stage 59:==============================================>         (15 + 3) / 18]                                                                                [Stage 68:======>                                                 (2 + 16) / 18][Stage 68:==============================================>         (15 + 3) / 18]                                                                                [Stage 77:======>                                                 (2 + 15) / 17][Stage 77:===================>                                    (6 + 11) / 17]                                                                                [Stage 86:===========>                                            (4 + 16) / 20][Stage 86:============================================>           (16 + 4) / 20]                                                                                [Stage 95:===========>                                            (4 + 15) / 19][Stage 95:============================================>           (15 + 4) / 19]                                                                                [Stage 104:===========>                                           (4 + 15) / 19][Stage 104:==============================================>        (16 + 3) / 19]                                                                                [Stage 113:>                                                      (0 + 10) / 10]                                                                                [Stage 122:=========>                                             (3 + 14) / 17][Stage 122:=============================================>         (14 + 3) / 17]                                                                                [Stage 131:===>                                                   (1 + 16) / 17][Stage 131:======================>                                (7 + 10) / 17]                                                                                [Stage 140:=================>                                     (5 + 11) / 16][Stage 140:===================================================>   (15 + 1) / 16]                                                                                [Stage 149:==============>                                        (5 + 14) / 19][Stage 149:==============================================>        (16 + 3) / 19]                                                                                [Stage 158:==========>                                            (3 + 13) / 16][Stage 158:=========================================>             (12 + 4) / 16]                                                                                [Stage 167:=================>                                     (5 + 11) / 16]                                                                                [Stage 176:=========>                                             (3 + 15) / 18][Stage 176:=============================================>         (15 + 3) / 18]                                                                                [Stage 185:============>                                          (4 + 14) / 18][Stage 185:=============================================>         (15 + 3) / 18]                                                                                [Stage 194:======>                                                (2 + 16) / 18][Stage 194:========================>                              (8 + 10) / 18]                                                                                [Stage 203:========>                                              (3 + 16) / 20][Stage 203:=========================================>             (15 + 5) / 20]                                                                                [Stage 212:>                                                      (0 + 15) / 15][Stage 212:===>                                                   (1 + 14) / 15][Stage 212:============================================>          (12 + 3) / 15]                                                                                [Stage 221:============>                                          (4 + 14) / 18][Stage 221:==========================================>            (14 + 4) / 18]                                                                                INFO: 25 circuitos en bronze
+
+INFO: --- Transformando abu_dhabi_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=abu_dhabi_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=abu_dhabi_grand_prix/Driver=*/
+INFO: filas procesadas: 717829
+
+INFO: --- Transformando australian_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=australian_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=australian_grand_prix/Driver=*/
+INFO: filas procesadas: 641657
+
+INFO: --- Transformando austrian_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=austrian_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=austrian_grand_prix/Driver=*/
+INFO: filas procesadas: 769424
+
+INFO: --- Transformando azerbaijan_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=azerbaijan_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=azerbaijan_grand_prix/Driver=*/
+INFO: filas procesadas: 819149
+
+INFO: --- Transformando bahrain_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=bahrain_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=bahrain_grand_prix/Driver=*/
+INFO: filas procesadas: 839141
+
+INFO: --- Transformando belgian_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=belgian_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=belgian_grand_prix/Driver=*/
+INFO: filas procesadas: 703261
+
+INFO: --- Transformando british_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=british_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=british_grand_prix/Driver=*/
+INFO: filas procesadas: 710471
+
+INFO: --- Transformando canadian_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=canadian_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=canadian_grand_prix/Driver=*/
+INFO: filas procesadas: 882802
+
+INFO: --- Transformando chinese_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=chinese_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=chinese_grand_prix/Driver=*/
+INFO: filas procesadas: 860000
+
+INFO: --- Transformando dutch_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=dutch_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=dutch_grand_prix/Driver=*/
+INFO: filas procesadas: 835176
+
+INFO: --- Transformando emilia_romagna_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=emilia_romagna_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=emilia_romagna_grand_prix/Driver=*/
+INFO: filas procesadas: 781388
+
+INFO: --- Transformando hungarian_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=hungarian_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=hungarian_grand_prix/Driver=*/
+INFO: filas procesadas: 876850
+
+INFO: --- Transformando italian_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=italian_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=italian_grand_prix/Driver=*/
+INFO: filas procesadas: 657236
+
+INFO: --- Transformando japanese_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=japanese_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=japanese_grand_prix/Driver=*/
+INFO: filas procesadas: 694360
+
+INFO: --- Transformando las_vegas_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=las_vegas_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=las_vegas_grand_prix/Driver=*/
+INFO: filas procesadas: 711452
+
+INFO: --- Transformando mexico_city_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=mexico_city_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=mexico_city_grand_prix/Driver=*/
+INFO: filas procesadas: 800841
+
+INFO: --- Transformando miami_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=miami_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=miami_grand_prix/Driver=*/
+INFO: filas procesadas: 813850
+
+INFO: --- Transformando monaco_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=monaco_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=monaco_grand_prix/Driver=*/
+INFO: filas procesadas: 769685
+
+INFO: --- Transformando qatar_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=qatar_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=qatar_grand_prix/Driver=*/
+INFO: filas procesadas: 694112
+
+INFO: --- Transformando saudi_arabian_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=saudi_arabian_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=saudi_arabian_grand_prix/Driver=*/
+INFO: filas procesadas: 680724
+
+INFO: --- Transformando silverstone 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=silverstone/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=silverstone/Driver=*/
+INFO: filas procesadas: 710471
+
+INFO: --- Transformando singapore_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=singapore_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=singapore_grand_prix/Driver=*/
+INFO: filas procesadas: 893092
+
+INFO: --- Transformando spanish_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=spanish_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=spanish_grand_prix/Driver=*/
+INFO: filas procesadas: 811405
+
+INFO: --- Transformando são_paulo_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=são_paulo_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=são_paulo_grand_prix/Driver=*/
+INFO: filas procesadas: 785522
+
+INFO: --- Transformando united_states_grand_prix 2024 ---
+SUCCESS: vueltas -> data/silver/laps/Year=2024/GrandPrix=united_states_grand_prix/
+SUCCESS: telemetría -> data/silver/telemetry/Year=2024/GrandPrix=united_states_grand_prix/Driver=*/
+INFO: filas procesadas: 838122
+CORRECTO: el proceso con PID 20404 (proceso secundario de PID 6568)
+ha sido terminado.
+CORRECTO: el proceso con PID 6568 (proceso secundario de PID 9640)
+ha sido terminado.
+CORRECTO: el proceso con PID 9640 (proceso secundario de PID 19784)
+ha sido terminado.

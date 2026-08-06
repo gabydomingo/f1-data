@@ -1,0 +1,6937 @@
+{
+  "generado": "2026-08-06T01:57:04.257314+00:00",
+  "years": [
+    2024,
+    2025,
+    2026
+  ],
+  "equipos": [
+    "Alpine",
+    "Aston Martin",
+    "Audi",
+    "Cadillac",
+    "Ferrari",
+    "Haas F1 Team",
+    "Kick Sauber",
+    "McLaren",
+    "Mercedes",
+    "RB",
+    "Racing Bulls",
+    "Red Bull Racing",
+    "Williams"
+  ],
+  "circuitos": [
+    {
+      "year": 2024,
+      "slug": "bahrain_grand_prix",
+      "nombre": "Baréin",
+      "ronda": 1,
+      "fecha": "2024-03-02",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.977,
+      "posicion_ok": true,
+      "vueltas": 57,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RIC",
+          "team": "RB",
+          "name": "Daniel Ricciardo"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "SAR",
+          "team": "Williams",
+          "name": "Logan Sargeant"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "saudi_arabian_grand_prix",
+      "nombre": "Arabia Saudita",
+      "ronda": 2,
+      "fecha": "2024-03-09",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.97,
+      "posicion_ok": true,
+      "vueltas": 50,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BEA",
+          "team": "Ferrari",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RIC",
+          "team": "RB",
+          "name": "Daniel Ricciardo"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAR",
+          "team": "Williams",
+          "name": "Logan Sargeant"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "australian_grand_prix",
+      "nombre": "Australia",
+      "ronda": 3,
+      "fecha": "2024-03-24",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.959,
+      "posicion_ok": true,
+      "vueltas": 58,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RIC",
+          "team": "RB",
+          "name": "Daniel Ricciardo"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "japanese_grand_prix",
+      "nombre": "Japón",
+      "ronda": 4,
+      "fecha": "2024-04-07",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.993,
+      "posicion_ok": true,
+      "vueltas": 53,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RIC",
+          "team": "RB",
+          "name": "Daniel Ricciardo"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "SAR",
+          "team": "Williams",
+          "name": "Logan Sargeant"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "chinese_grand_prix",
+      "nombre": "China",
+      "ronda": 5,
+      "fecha": "2024-04-21",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.972,
+      "posicion_ok": true,
+      "vueltas": 56,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RIC",
+          "team": "RB",
+          "name": "Daniel Ricciardo"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "SAR",
+          "team": "Williams",
+          "name": "Logan Sargeant"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "miami_grand_prix",
+      "nombre": "Miami",
+      "ronda": 6,
+      "fecha": "2024-05-05",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.978,
+      "posicion_ok": true,
+      "vueltas": 57,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RIC",
+          "team": "RB",
+          "name": "Daniel Ricciardo"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "SAR",
+          "team": "Williams",
+          "name": "Logan Sargeant"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "emilia_romagna_grand_prix",
+      "nombre": "Emilia-Romaña",
+      "ronda": 7,
+      "fecha": "2024-05-19",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.982,
+      "posicion_ok": true,
+      "vueltas": 63,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RIC",
+          "team": "RB",
+          "name": "Daniel Ricciardo"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "SAR",
+          "team": "Williams",
+          "name": "Logan Sargeant"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "monaco_grand_prix",
+      "nombre": "Mónaco",
+      "ronda": 8,
+      "fecha": "2024-05-26",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.98,
+      "posicion_ok": true,
+      "vueltas": 78,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RIC",
+          "team": "RB",
+          "name": "Daniel Ricciardo"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "SAR",
+          "team": "Williams",
+          "name": "Logan Sargeant"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "canadian_grand_prix",
+      "nombre": "Canadá",
+      "ronda": 9,
+      "fecha": "2024-06-09",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.967,
+      "posicion_ok": true,
+      "vueltas": 70,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RIC",
+          "team": "RB",
+          "name": "Daniel Ricciardo"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "SAR",
+          "team": "Williams",
+          "name": "Logan Sargeant"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "spanish_grand_prix",
+      "nombre": "España",
+      "ronda": 10,
+      "fecha": "2024-06-23",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.988,
+      "posicion_ok": true,
+      "vueltas": 66,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RIC",
+          "team": "RB",
+          "name": "Daniel Ricciardo"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "SAR",
+          "team": "Williams",
+          "name": "Logan Sargeant"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "austrian_grand_prix",
+      "nombre": "Austria",
+      "ronda": 11,
+      "fecha": "2024-06-30",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.978,
+      "posicion_ok": true,
+      "vueltas": 71,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RIC",
+          "team": "RB",
+          "name": "Daniel Ricciardo"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "SAR",
+          "team": "Williams",
+          "name": "Logan Sargeant"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "british_grand_prix",
+      "nombre": "Gran Bretaña",
+      "ronda": 12,
+      "fecha": "2024-07-07",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.977,
+      "posicion_ok": true,
+      "vueltas": 52,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RIC",
+          "team": "RB",
+          "name": "Daniel Ricciardo"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "SAR",
+          "team": "Williams",
+          "name": "Logan Sargeant"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "hungarian_grand_prix",
+      "nombre": "Hungría",
+      "ronda": 13,
+      "fecha": "2024-07-21",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.98,
+      "posicion_ok": true,
+      "vueltas": 70,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RIC",
+          "team": "RB",
+          "name": "Daniel Ricciardo"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "SAR",
+          "team": "Williams",
+          "name": "Logan Sargeant"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "belgian_grand_prix",
+      "nombre": "Bélgica",
+      "ronda": 14,
+      "fecha": "2024-07-28",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.974,
+      "posicion_ok": true,
+      "vueltas": 44,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RIC",
+          "team": "RB",
+          "name": "Daniel Ricciardo"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "SAR",
+          "team": "Williams",
+          "name": "Logan Sargeant"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "dutch_grand_prix",
+      "nombre": "Países Bajos",
+      "ronda": 15,
+      "fecha": "2024-08-25",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.976,
+      "posicion_ok": true,
+      "vueltas": 72,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RIC",
+          "team": "RB",
+          "name": "Daniel Ricciardo"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "SAR",
+          "team": "Williams",
+          "name": "Logan Sargeant"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "italian_grand_prix",
+      "nombre": "Italia",
+      "ronda": 16,
+      "fecha": "2024-09-01",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.972,
+      "posicion_ok": true,
+      "vueltas": 53,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Williams",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RIC",
+          "team": "RB",
+          "name": "Daniel Ricciardo"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "azerbaijan_grand_prix",
+      "nombre": "Azerbaiyán",
+      "ronda": 17,
+      "fecha": "2024-09-15",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.958,
+      "posicion_ok": true,
+      "vueltas": 50,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Williams",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RIC",
+          "team": "RB",
+          "name": "Daniel Ricciardo"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "singapore_grand_prix",
+      "nombre": "Singapur",
+      "ronda": 18,
+      "fecha": "2024-09-22",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.966,
+      "posicion_ok": true,
+      "vueltas": 62,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Williams",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RIC",
+          "team": "RB",
+          "name": "Daniel Ricciardo"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "united_states_grand_prix",
+      "nombre": "Estados Unidos",
+      "ronda": 19,
+      "fecha": "2024-10-20",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.964,
+      "posicion_ok": true,
+      "vueltas": 56,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Williams",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "RB",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "mexico_city_grand_prix",
+      "nombre": "México",
+      "ronda": 20,
+      "fecha": "2024-10-27",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.975,
+      "posicion_ok": true,
+      "vueltas": 71,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Williams",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "RB",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "são_paulo_grand_prix",
+      "nombre": "São Paulo",
+      "ronda": 21,
+      "fecha": "2024-11-03",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.974,
+      "posicion_ok": true,
+      "vueltas": 69,
+      "pilotos": [
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Williams",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "RB",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "las_vegas_grand_prix",
+      "nombre": "Las Vegas",
+      "ronda": 22,
+      "fecha": "2024-11-23",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.979,
+      "posicion_ok": true,
+      "vueltas": 50,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Williams",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "RB",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "qatar_grand_prix",
+      "nombre": "Qatar",
+      "ronda": 23,
+      "fecha": "2024-12-01",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.984,
+      "posicion_ok": true,
+      "vueltas": 57,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Williams",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "RB",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Alpine",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "slug": "abu_dhabi_grand_prix",
+      "nombre": "Abu Dhabi",
+      "ronda": 24,
+      "fecha": "2024-12-08",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.979,
+      "posicion_ok": true,
+      "vueltas": 58,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "BOT",
+          "team": "Kick Sauber",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Williams",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "DOO",
+          "team": "Alpine",
+          "name": "Jack Doohan"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Mercedes",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Haas F1 Team",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "RB",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "MAG",
+          "team": "Haas F1 Team",
+          "name": "Kevin Magnussen"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "PER",
+          "team": "Red Bull Racing",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Ferrari",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "RB",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        },
+        {
+          "code": "ZHO",
+          "team": "Kick Sauber",
+          "name": "Guanyu Zhou"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "australian_grand_prix",
+      "nombre": "Australia",
+      "ronda": 1,
+      "fecha": "2025-03-16",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.987,
+      "posicion_ok": true,
+      "vueltas": 57,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "DOO",
+          "team": "Alpine",
+          "name": "Jack Doohan"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Red Bull Racing",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Racing Bulls",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "chinese_grand_prix",
+      "nombre": "China",
+      "ronda": 2,
+      "fecha": "2025-03-23",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.972,
+      "posicion_ok": true,
+      "vueltas": 56,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "DOO",
+          "team": "Alpine",
+          "name": "Jack Doohan"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Red Bull Racing",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Racing Bulls",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "japanese_grand_prix",
+      "nombre": "Japón",
+      "ronda": 3,
+      "fecha": "2025-04-06",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.982,
+      "posicion_ok": true,
+      "vueltas": 53,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "DOO",
+          "team": "Alpine",
+          "name": "Jack Doohan"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "bahrain_grand_prix",
+      "nombre": "Baréin",
+      "ronda": 4,
+      "fecha": "2025-04-13",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.975,
+      "posicion_ok": true,
+      "vueltas": 57,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "DOO",
+          "team": "Alpine",
+          "name": "Jack Doohan"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "saudi_arabian_grand_prix",
+      "nombre": "Arabia Saudita",
+      "ronda": 5,
+      "fecha": "2025-04-20",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.975,
+      "posicion_ok": true,
+      "vueltas": 50,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "DOO",
+          "team": "Alpine",
+          "name": "Jack Doohan"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "miami_grand_prix",
+      "nombre": "Miami",
+      "ronda": 6,
+      "fecha": "2025-05-04",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.983,
+      "posicion_ok": true,
+      "vueltas": 57,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "DOO",
+          "team": "Alpine",
+          "name": "Jack Doohan"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "emilia_romagna_grand_prix",
+      "nombre": "Emilia-Romaña",
+      "ronda": 7,
+      "fecha": "2025-05-18",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.977,
+      "posicion_ok": true,
+      "vueltas": 63,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "monaco_grand_prix",
+      "nombre": "Mónaco",
+      "ronda": 8,
+      "fecha": "2025-05-25",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.981,
+      "posicion_ok": true,
+      "vueltas": 78,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "spanish_grand_prix",
+      "nombre": "España",
+      "ronda": 9,
+      "fecha": "2025-06-01",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.977,
+      "posicion_ok": true,
+      "vueltas": 66,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "canadian_grand_prix",
+      "nombre": "Canadá",
+      "ronda": 10,
+      "fecha": "2025-06-15",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.973,
+      "posicion_ok": true,
+      "vueltas": 70,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "austrian_grand_prix",
+      "nombre": "Austria",
+      "ronda": 11,
+      "fecha": "2025-06-29",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.985,
+      "posicion_ok": true,
+      "vueltas": 70,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "british_grand_prix",
+      "nombre": "Gran Bretaña",
+      "ronda": 12,
+      "fecha": "2025-07-06",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.956,
+      "posicion_ok": true,
+      "vueltas": 52,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "belgian_grand_prix",
+      "nombre": "Bélgica",
+      "ronda": 13,
+      "fecha": "2025-07-27",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.985,
+      "posicion_ok": true,
+      "vueltas": 44,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "hungarian_grand_prix",
+      "nombre": "Hungría",
+      "ronda": 14,
+      "fecha": "2025-08-03",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.975,
+      "posicion_ok": true,
+      "vueltas": 70,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "dutch_grand_prix",
+      "nombre": "Países Bajos",
+      "ronda": 15,
+      "fecha": "2025-08-31",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.975,
+      "posicion_ok": true,
+      "vueltas": 72,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "italian_grand_prix",
+      "nombre": "Italia",
+      "ronda": 16,
+      "fecha": "2025-09-07",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.971,
+      "posicion_ok": true,
+      "vueltas": 53,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "azerbaijan_grand_prix",
+      "nombre": "Azerbaiyán",
+      "ronda": 17,
+      "fecha": "2025-09-21",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.98,
+      "posicion_ok": true,
+      "vueltas": 51,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "singapore_grand_prix",
+      "nombre": "Singapur",
+      "ronda": 18,
+      "fecha": "2025-10-05",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.978,
+      "posicion_ok": true,
+      "vueltas": 62,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "united_states_grand_prix",
+      "nombre": "Estados Unidos",
+      "ronda": 19,
+      "fecha": "2025-10-19",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.979,
+      "posicion_ok": true,
+      "vueltas": 56,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "mexico_city_grand_prix",
+      "nombre": "México",
+      "ronda": 20,
+      "fecha": "2025-10-26",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.984,
+      "posicion_ok": true,
+      "vueltas": 71,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "são_paulo_grand_prix",
+      "nombre": "São Paulo",
+      "ronda": 21,
+      "fecha": "2025-11-09",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.971,
+      "posicion_ok": true,
+      "vueltas": 71,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "las_vegas_grand_prix",
+      "nombre": "Las Vegas",
+      "ronda": 22,
+      "fecha": "2025-11-22",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.968,
+      "posicion_ok": true,
+      "vueltas": 50,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "qatar_grand_prix",
+      "nombre": "Qatar",
+      "ronda": 23,
+      "fecha": "2025-11-30",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.967,
+      "posicion_ok": true,
+      "vueltas": 57,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "slug": "abu_dhabi_grand_prix",
+      "nombre": "Abu Dhabi",
+      "ronda": 24,
+      "fecha": "2025-12-07",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.967,
+      "posicion_ok": true,
+      "vueltas": 58,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Andrea Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Kick Sauber",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Racing Bulls",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Kick Sauber",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "TSU",
+          "team": "Red Bull Racing",
+          "name": "Yuki Tsunoda"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "slug": "australian_grand_prix",
+      "nombre": "Australia",
+      "ronda": 1,
+      "fecha": "2026-03-08",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.966,
+      "posicion_ok": true,
+      "vueltas": 58,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Audi",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "BOT",
+          "team": "Cadillac",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Red Bull Racing",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "LIN",
+          "team": "Racing Bulls",
+          "name": "Arvid Lindblad"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Cadillac",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "slug": "chinese_grand_prix",
+      "nombre": "China",
+      "ronda": 2,
+      "fecha": "2026-03-15",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.927,
+      "posicion_ok": true,
+      "vueltas": 56,
+      "pilotos": [
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOT",
+          "team": "Cadillac",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Red Bull Racing",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Audi",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "LIN",
+          "team": "Racing Bulls",
+          "name": "Arvid Lindblad"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Cadillac",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "slug": "japanese_grand_prix",
+      "nombre": "Japón",
+      "ronda": 3,
+      "fecha": "2026-03-29",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.966,
+      "posicion_ok": true,
+      "vueltas": 53,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Audi",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "BOT",
+          "team": "Cadillac",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Red Bull Racing",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Audi",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "LIN",
+          "team": "Racing Bulls",
+          "name": "Arvid Lindblad"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Cadillac",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "slug": "miami_grand_prix",
+      "nombre": "Miami",
+      "ronda": 4,
+      "fecha": "2026-05-03",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.965,
+      "posicion_ok": true,
+      "vueltas": 57,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Audi",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "BOT",
+          "team": "Cadillac",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Red Bull Racing",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Audi",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "LIN",
+          "team": "Racing Bulls",
+          "name": "Arvid Lindblad"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Cadillac",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "slug": "canadian_grand_prix",
+      "nombre": "Canadá",
+      "ronda": 5,
+      "fecha": "2026-05-24",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.965,
+      "posicion_ok": true,
+      "vueltas": 68,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Audi",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "BOT",
+          "team": "Cadillac",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Red Bull Racing",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Audi",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Cadillac",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "slug": "monaco_grand_prix",
+      "nombre": "Mónaco",
+      "ronda": 6,
+      "fecha": "2026-06-07",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.973,
+      "posicion_ok": true,
+      "vueltas": 78,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Audi",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "BOT",
+          "team": "Cadillac",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Red Bull Racing",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Audi",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "LIN",
+          "team": "Racing Bulls",
+          "name": "Arvid Lindblad"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Cadillac",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "slug": "barcelona_grand_prix",
+      "nombre": "Barcelona",
+      "ronda": 7,
+      "fecha": "2026-06-14",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.979,
+      "posicion_ok": true,
+      "vueltas": 66,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Audi",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "BOT",
+          "team": "Cadillac",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Red Bull Racing",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Audi",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "LIN",
+          "team": "Racing Bulls",
+          "name": "Arvid Lindblad"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Cadillac",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "slug": "austrian_grand_prix",
+      "nombre": "Austria",
+      "ronda": 8,
+      "fecha": "2026-06-28",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.967,
+      "posicion_ok": true,
+      "vueltas": 71,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Audi",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "BOT",
+          "team": "Cadillac",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Red Bull Racing",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Audi",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "LIN",
+          "team": "Racing Bulls",
+          "name": "Arvid Lindblad"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Cadillac",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "slug": "british_grand_prix",
+      "nombre": "Gran Bretaña",
+      "ronda": 9,
+      "fecha": "2026-07-05",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.987,
+      "posicion_ok": true,
+      "vueltas": 52,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Audi",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "BOT",
+          "team": "Cadillac",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Red Bull Racing",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Audi",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "LIN",
+          "team": "Racing Bulls",
+          "name": "Arvid Lindblad"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Cadillac",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "slug": "belgian_grand_prix",
+      "nombre": "Bélgica",
+      "ronda": 10,
+      "fecha": "2026-07-19",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.985,
+      "posicion_ok": true,
+      "vueltas": 44,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Audi",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "BOT",
+          "team": "Cadillac",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Red Bull Racing",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Audi",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "LIN",
+          "team": "Racing Bulls",
+          "name": "Arvid Lindblad"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Cadillac",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "slug": "hungarian_grand_prix",
+      "nombre": "Hungría",
+      "ronda": 11,
+      "fecha": "2026-07-26",
+      "corrida": true,
+      "tiene_datos": true,
+      "posicion_calidad": 0.214,
+      "posicion_ok": false,
+      "vueltas": 70,
+      "pilotos": [
+        {
+          "code": "ALB",
+          "team": "Williams",
+          "name": "Alexander Albon"
+        },
+        {
+          "code": "ALO",
+          "team": "Aston Martin",
+          "name": "Fernando Alonso"
+        },
+        {
+          "code": "ANT",
+          "team": "Mercedes",
+          "name": "Kimi Antonelli"
+        },
+        {
+          "code": "BEA",
+          "team": "Haas F1 Team",
+          "name": "Oliver Bearman"
+        },
+        {
+          "code": "BOR",
+          "team": "Audi",
+          "name": "Gabriel Bortoleto"
+        },
+        {
+          "code": "BOT",
+          "team": "Cadillac",
+          "name": "Valtteri Bottas"
+        },
+        {
+          "code": "COL",
+          "team": "Alpine",
+          "name": "Franco Colapinto"
+        },
+        {
+          "code": "GAS",
+          "team": "Alpine",
+          "name": "Pierre Gasly"
+        },
+        {
+          "code": "HAD",
+          "team": "Red Bull Racing",
+          "name": "Isack Hadjar"
+        },
+        {
+          "code": "HAM",
+          "team": "Ferrari",
+          "name": "Lewis Hamilton"
+        },
+        {
+          "code": "HUL",
+          "team": "Audi",
+          "name": "Nico Hulkenberg"
+        },
+        {
+          "code": "LAW",
+          "team": "Racing Bulls",
+          "name": "Liam Lawson"
+        },
+        {
+          "code": "LEC",
+          "team": "Ferrari",
+          "name": "Charles Leclerc"
+        },
+        {
+          "code": "LIN",
+          "team": "Racing Bulls",
+          "name": "Arvid Lindblad"
+        },
+        {
+          "code": "NOR",
+          "team": "McLaren",
+          "name": "Lando Norris"
+        },
+        {
+          "code": "OCO",
+          "team": "Haas F1 Team",
+          "name": "Esteban Ocon"
+        },
+        {
+          "code": "PER",
+          "team": "Cadillac",
+          "name": "Sergio Perez"
+        },
+        {
+          "code": "PIA",
+          "team": "McLaren",
+          "name": "Oscar Piastri"
+        },
+        {
+          "code": "RUS",
+          "team": "Mercedes",
+          "name": "George Russell"
+        },
+        {
+          "code": "SAI",
+          "team": "Williams",
+          "name": "Carlos Sainz"
+        },
+        {
+          "code": "STR",
+          "team": "Aston Martin",
+          "name": "Lance Stroll"
+        },
+        {
+          "code": "VER",
+          "team": "Red Bull Racing",
+          "name": "Max Verstappen"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "slug": "dutch_grand_prix",
+      "nombre": "Países Bajos",
+      "ronda": 12,
+      "fecha": "2026-08-23",
+      "corrida": false,
+      "tiene_datos": false,
+      "posicion_calidad": 0.0,
+      "posicion_ok": false,
+      "vueltas": null,
+      "pilotos": []
+    },
+    {
+      "year": 2026,
+      "slug": "italian_grand_prix",
+      "nombre": "Italia",
+      "ronda": 13,
+      "fecha": "2026-09-06",
+      "corrida": false,
+      "tiene_datos": false,
+      "posicion_calidad": 0.0,
+      "posicion_ok": false,
+      "vueltas": null,
+      "pilotos": []
+    },
+    {
+      "year": 2026,
+      "slug": "spanish_grand_prix",
+      "nombre": "España",
+      "ronda": 14,
+      "fecha": "2026-09-13",
+      "corrida": false,
+      "tiene_datos": false,
+      "posicion_calidad": 0.0,
+      "posicion_ok": false,
+      "vueltas": null,
+      "pilotos": []
+    },
+    {
+      "year": 2026,
+      "slug": "azerbaijan_grand_prix",
+      "nombre": "Azerbaiyán",
+      "ronda": 15,
+      "fecha": "2026-09-26",
+      "corrida": false,
+      "tiene_datos": false,
+      "posicion_calidad": 0.0,
+      "posicion_ok": false,
+      "vueltas": null,
+      "pilotos": []
+    },
+    {
+      "year": 2026,
+      "slug": "bahrain_grand_prix",
+      "nombre": "Baréin",
+      "ronda": 16,
+      "fecha": "2026-10-04",
+      "corrida": false,
+      "tiene_datos": false,
+      "posicion_calidad": 0.0,
+      "posicion_ok": false,
+      "vueltas": null,
+      "pilotos": []
+    },
+    {
+      "year": 2026,
+      "slug": "singapore_grand_prix",
+      "nombre": "Singapur",
+      "ronda": 17,
+      "fecha": "2026-10-11",
+      "corrida": false,
+      "tiene_datos": false,
+      "posicion_calidad": 0.0,
+      "posicion_ok": false,
+      "vueltas": null,
+      "pilotos": []
+    },
+    {
+      "year": 2026,
+      "slug": "united_states_grand_prix",
+      "nombre": "Estados Unidos",
+      "ronda": 18,
+      "fecha": "2026-10-25",
+      "corrida": false,
+      "tiene_datos": false,
+      "posicion_calidad": 0.0,
+      "posicion_ok": false,
+      "vueltas": null,
+      "pilotos": []
+    },
+    {
+      "year": 2026,
+      "slug": "mexico_city_grand_prix",
+      "nombre": "México",
+      "ronda": 19,
+      "fecha": "2026-11-01",
+      "corrida": false,
+      "tiene_datos": false,
+      "posicion_calidad": 0.0,
+      "posicion_ok": false,
+      "vueltas": null,
+      "pilotos": []
+    },
+    {
+      "year": 2026,
+      "slug": "são_paulo_grand_prix",
+      "nombre": "São Paulo",
+      "ronda": 20,
+      "fecha": "2026-11-08",
+      "corrida": false,
+      "tiene_datos": false,
+      "posicion_calidad": 0.0,
+      "posicion_ok": false,
+      "vueltas": null,
+      "pilotos": []
+    },
+    {
+      "year": 2026,
+      "slug": "las_vegas_grand_prix",
+      "nombre": "Las Vegas",
+      "ronda": 21,
+      "fecha": "2026-11-21",
+      "corrida": false,
+      "tiene_datos": false,
+      "posicion_calidad": 0.0,
+      "posicion_ok": false,
+      "vueltas": null,
+      "pilotos": []
+    },
+    {
+      "year": 2026,
+      "slug": "qatar_grand_prix",
+      "nombre": "Qatar",
+      "ronda": 22,
+      "fecha": "2026-11-29",
+      "corrida": false,
+      "tiene_datos": false,
+      "posicion_calidad": 0.0,
+      "posicion_ok": false,
+      "vueltas": null,
+      "pilotos": []
+    },
+    {
+      "year": 2026,
+      "slug": "abu_dhabi_grand_prix",
+      "nombre": "Abu Dhabi",
+      "ronda": 23,
+      "fecha": "2026-12-06",
+      "corrida": false,
+      "tiene_datos": false,
+      "posicion_calidad": 0.0,
+      "posicion_ok": false,
+      "vueltas": null,
+      "pilotos": []
+    }
+  ]
+}

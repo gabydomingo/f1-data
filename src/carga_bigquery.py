@@ -1,7 +1,14 @@
 """
-Module: Gold Layer (BigQuery Load)
-Description: Loads the processed Silver data into Google BigQuery 
-             to be consumed by Looker Studio for the BI Dashboard.
+Carga del silver en BigQuery.
+
+Sube la telemetría ya limpia a Google BigQuery para consumirla desde Looker
+Studio. Es una salida alternativa al dashboard propio: sirve para explorar los
+datos con SQL sin levantar la aplicación.
+
+Requiere gcp_credentials.json en la raíz del proyecto (fuera del repositorio).
+
+Uso:
+    python src/carga_bigquery.py
 """
 
 import os
@@ -22,7 +29,8 @@ def load_to_bigquery():
     df = pd.read_parquet(SILVER_DIR)
     
     print(f"INFO: Subiendo datos a BigQuery ({TABLE_ID})...")
-    # Usamos pandas_gbq directamente para evitar el FutureWarning
+    # Se llama a pandas_gbq directo en lugar de DataFrame.to_gbq: ese atajo
+    # está deprecado en pandas y emite un FutureWarning en cada corrida.
     pandas_gbq.to_gbq(
         df,
         destination_table=TABLE_ID,
