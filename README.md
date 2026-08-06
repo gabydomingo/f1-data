@@ -8,8 +8,7 @@ para el análisis agregado.
 **[Dashboard interactivo](https://f1-data-two.vercel.app)** · **[Análisis en Looker Studio](https://datastudio.google.com/reporting/08593df1-5291-419c-847a-ce256097384e)**
 
 <!-- Reemplazar por capturas propias -->
-![Dashboard](<img width="1920" height="911" alt="cap-web" src="https://github.com/user-attachments/assets/47a80f5f-ced6-4464-8829-e46f1d49304c" />
-)
+![Dashboard](<img width="1920" height="911" alt="cap-web" src="https://github.com/user-attachments/assets/47a80f5f-ced6-4464-8829-e46f1d49304c" />)
 
 ---
 
