@@ -4,7 +4,7 @@ Plataforma de análisis de telemetría de Fórmula 1 construida sobre un pipelin
 Toma el cronometraje oficial de la FIA, lo procesa en un data lake de tres capas y lo expone en un
 dashboard donde se puede recorrer cualquier vuelta de cualquier piloto, metro a metro.
 
-**[Ver el dashboard](https://TU-URL.vercel.app)**
+**[Ver el dashboard][(https://TU-URL.vercel.app](https://f1-data-two.vercel.app/)**
 
 <!-- Reemplazar por una captura del dashboard en funcionamiento -->
 ![Dashboard](docs/screenshot.png)
