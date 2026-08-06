@@ -73,10 +73,35 @@ export default function InfoPanel({ onClose }: Props) {
             acá con fines informativos.
           </p>
           <p className="mt-2">
-            {/* La licencia CC BY exige nombrar autor, título y licencia.
-                Completar con los datos exactos de la página del modelo. */}
-            Modelo 3D: &quot;2026 Red Bull Racing RB22&quot; por Dave Love SketchFab, publicado en
-            Sketchfab bajo licencia CC BY 4.0. Optimizado para web (Draco + WebP).
+            {/* La licencia CC BY exige nombrar autor, obra y licencia. */}
+            Modelo 3D:{" "}
+            <a
+              href="https://sketchfab.com/3d-models/2026-red-bull-racing-rb22-8e5a68a7991c4a46bd66a879c060b3c5"
+              target="_blank"
+              rel="noreferrer"
+              className="text-neutral-300 underline underline-offset-2"
+            >
+              &quot;2026 Red Bull Racing RB22&quot;
+            </a>{" "}
+            por{" "}
+            <a
+              href="https://sketchfab.com/Tyler_Dave"
+              target="_blank"
+              rel="noreferrer"
+              className="text-neutral-300 underline underline-offset-2"
+            >
+              Dave Love SketchFab
+            </a>
+            , bajo licencia{" "}
+            <a
+              href="https://creativecommons.org/licenses/by/4.0/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-neutral-300 underline underline-offset-2"
+            >
+              CC BY 4.0
+            </a>
+            . Optimizado para web con Draco y WebP.
           </p>
         </Seccion>
       </div>
