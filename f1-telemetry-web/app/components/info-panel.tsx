@@ -75,7 +75,7 @@ export default function InfoPanel({ onClose }: Props) {
           <p className="mt-2">
             {/* La licencia CC BY exige nombrar autor, título y licencia.
                 Completar con los datos exactos de la página del modelo. */}
-            Modelo 3D: &quot;2026 Red Bull Racing RB22&quot; por AUTOR_DEL_MODELO, publicado en
+            Modelo 3D: &quot;2026 Red Bull Racing RB22&quot; por Dave Love SketchFab, publicado en
             Sketchfab bajo licencia CC BY 4.0. Optimizado para web (Draco + WebP).
           </p>
         </Seccion>

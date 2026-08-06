@@ -1,0 +1,16 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+
+  "functions": {
+    "app/api/**/route.ts": {
+      "maxDuration": 25
+    }
+  },
+
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- .",
+
+  "github": {
+    "silent": true
+  }
+}
