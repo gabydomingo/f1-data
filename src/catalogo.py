@@ -9,12 +9,21 @@ tienen datos, en vez de simplemente no listarlos.
 
 Salida: data/gold/catalogo.json
 
+Variables de entorno:
+    F1_FUENTE  "local" (por defecto) lee las particiones del disco;
+               "s3" las lista directamente del bucket. El runner de Actions
+               usa s3: bajar silver/telemetry entero son más de 1 GB por
+               corrida y el catálogo solo necesita los nombres de partición.
+    F1_BUCKET  Bucket del data lake.
+
 Uso:
     python src/catalogo.py
+    F1_FUENTE=s3 python src/catalogo.py
 """
 
 import json
 import os
+import tempfile
 from datetime import datetime, timezone
 
 import fastf1
@@ -25,6 +34,10 @@ SILVER_TEL = "data/silver/telemetry"
 CACHE_DIR = "data/cache/"
 GOLD_DIR = "data/gold"
 OUTPUT = os.path.join(GOLD_DIR, "catalogo.json")
+
+# De dónde salen las particiones de telemetría. Ver el docstring.
+FUENTE = os.environ.get("F1_FUENTE", "local").lower()
+BUCKET = os.environ.get("F1_BUCKET", "f1-telemetry-datalake-gabriel")
 
 # Temporadas que el dashboard ofrece, existan o no sus datos todavía.
 TEMPORADAS = [2024, 2025, 2026]
@@ -95,21 +108,95 @@ def nombres_por_temporada(year: int, eventos: list) -> dict:
     return mapa
 
 
+_cliente_s3 = None
+
+
+def s3():
+    """Cliente boto3, creado recién cuando hace falta: en modo local no se usa."""
+    global _cliente_s3
+    if _cliente_s3 is None:
+        import boto3
+
+        _cliente_s3 = boto3.client("s3")
+    return _cliente_s3
+
+
 def pilotos_con_telemetria(year: int, gp: str) -> list:
     """
-    Pilotos que tienen telemetría cargada, leyendo las carpetas de partición.
+    Pilotos que tienen telemetría cargada, leyendo los nombres de partición.
 
     La lista NO sale del silver de vueltas: ahí se filtran las vueltas sin
     LapTime, así que un piloto que abandonó temprano desaparece de esa tabla
     aunque su telemetría esté guardada. El selector mostraría menos pilotos de
     los que la API puede servir.
     """
+    if FUENTE == "s3":
+        # Delimiter="/" devuelve los prefijos Driver=XXX/ sin listar los
+        # archivos que hay adentro: una request por carrera, no por piloto.
+        resp = s3().list_objects_v2(
+            Bucket=BUCKET,
+            Prefix=f"{SILVER_TEL}/Year={year}/GrandPrix={gp}/",
+            Delimiter="/",
+        )
+        return sorted(
+            pre["Prefix"].rstrip("/").split("Driver=")[-1]
+            for pre in resp.get("CommonPrefixes", [])
+        )
+
     base = os.path.join(SILVER_TEL, f"Year={year}", f"GrandPrix={gp}")
     if not os.path.isdir(base):
         return []
     return sorted(
         d.split("=", 1)[1] for d in os.listdir(base) if d.startswith("Driver=")
     )
+
+
+def ruta_parquet(year: int, gp: str, piloto: str):
+    """
+    Ruta legible por pandas para la telemetría de un piloto.
+
+    En modo S3 descarga el archivo a un temporal: medir la calidad de posición
+    exige leer columnas reales, no alcanza con listar prefijos.
+    """
+    if FUENTE == "s3":
+        prefijo = f"{SILVER_TEL}/Year={year}/GrandPrix={gp}/Driver={piloto}/"
+        resp = s3().list_objects_v2(Bucket=BUCKET, Prefix=prefijo)
+        keys = [
+            o["Key"] for o in resp.get("Contents", []) if o["Key"].endswith(".parquet")
+        ]
+        if not keys:
+            return None
+        destino = os.path.join(
+            tempfile.gettempdir(), f"cat_{year}_{gp}_{piloto}.parquet"
+        )
+        s3().download_file(BUCKET, keys[0], destino)
+        return destino
+
+    base = os.path.join(SILVER_TEL, f"Year={year}", f"GrandPrix={gp}", f"Driver={piloto}")
+    return base if os.path.isdir(base) else None
+
+
+def calidad_previa() -> dict:
+    """
+    Calidad de posición ya calculada en la corrida anterior, por (año, slug).
+
+    El valor no cambia una vez que la carrera está ingestada, y calcularlo
+    cuesta descargar un parquet. Reusando el catálogo anterior, una corrida
+    semanal baja un solo archivo en vez de cincuenta y nueve.
+    """
+    if not os.path.exists(OUTPUT):
+        return {}
+    try:
+        with open(OUTPUT, encoding="utf-8") as f:
+            previo = json.load(f)
+    except Exception:
+        return {}
+
+    return {
+        (c["year"], c["slug"]): c["posicion_calidad"]
+        for c in previo.get("circuitos", [])
+        if c.get("tiene_datos") and c.get("posicion_calidad")
+    }
 
 
 def calidad_posicion(year: int, gp: str) -> float:
@@ -126,18 +213,16 @@ def calidad_posicion(year: int, gp: str) -> float:
     sumar el movimiento total tampoco: después de quedarse quieta, la posición
     pega un salto al punto correcto y la suma termina cerrando igual.
     """
-    base = os.path.join(SILVER_TEL, f"Year={year}", f"GrandPrix={gp}")
-    if not os.path.isdir(base):
-        return 0.0
-
-    pilotos = [d for d in os.listdir(base) if d.startswith("Driver=")]
+    pilotos = pilotos_con_telemetria(year, gp)
     if not pilotos:
         return 0.0
 
+    ruta = ruta_parquet(year, gp, pilotos[0])
+    if ruta is None:
+        return 0.0
+
     try:
-        df = pd.read_parquet(
-            os.path.join(base, pilotos[0]), columns=["LapNumber", "Distance", "X", "Y"]
-        )
+        df = pd.read_parquet(ruta, columns=["LapNumber", "Distance", "X", "Y"])
     except Exception:
         return 0.0
 
@@ -214,6 +299,11 @@ def generar():
     else:
         print("WARNING: no hay silver todavía, el catálogo va a salir vacío de datos")
 
+    # Se lee antes de sobrescribir la salida.
+    previa = calidad_previa()
+    if previa:
+        print(f"INFO: {len(previa)} calidades de posición reusadas del catálogo anterior")
+
     ahora = pd.Timestamp.now()
     circuitos = []
 
@@ -239,8 +329,12 @@ def generar():
             fecha = pd.Timestamp(ev.EventDate)
 
             # Por debajo de 0,75 la posición avanza mucho menos que el auto:
-            # el trazado saldría hecho pedazos.
-            calidad = calidad_posicion(year, s) if codigos else 0.0
+            # el trazado saldría hecho pedazos. Si ya se midió antes se reusa:
+            # el dato no cambia y medirlo cuesta leer un parquet entero.
+            if not codigos:
+                calidad = 0.0
+            else:
+                calidad = previa.get((year, s)) or calidad_posicion(year, s)
 
             circuitos.append({
                 "year": year,

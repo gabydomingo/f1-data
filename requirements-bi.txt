@@ -1,0 +1,11 @@
+# Solo para src/carga_bigquery.py, que alimenta el dashboard de Looker Studio.
+#
+# Va aparte porque arrastra todo el cliente de Google Cloud, y el pipeline de
+# GitHub Actions no lo necesita: instalarlo ahí serían megabytes y medio
+# minuto de más en cada corrida semanal.
+#
+#   pip install -r requirements.txt -r requirements-bi.txt
+
+pandas-gbq==0.35.0
+google-auth==2.56.2
+db-dtypes==1.7.1

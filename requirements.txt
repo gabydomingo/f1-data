@@ -1,6 +1,21 @@
+# Versiones fijas a propósito.
+#
+# El modelo se guarda con pickle en un proceso y se carga en otro: si el
+# runner instala una versión de xgboost distinta a la del entrenamiento,
+# pickle.load puede romper, y el error no dice que la causa es la versión.
+# Lo mismo vale para pyarrow y el formato de los Parquet.
+#
+# Estas son las versiones con las que se entrenaron los modelos publicados.
+
 fastf1==3.8.3
-pandas
-pyarrow
-pyspark
-scikit-learn
-xgboost
+pandas==2.3.3
+numpy==2.5.1
+pyarrow==25.0.0
+pyspark==4.2.0
+scikit-learn==1.9.0
+xgboost==3.3.0
+
+# catalogo.py con F1_FUENTE=s3 lista las particiones del bucket en vez de
+# leerlas del disco. Rango y no versión exacta: boto3 publica casi a diario
+# y mantiene compatibilidad dentro de la 1.x.
+boto3>=1.34,<2
