@@ -20,3 +20,4 @@ data/silver/
 models/*.pkl
 # Logs de las corridas de ingesta: utiles en local, ruido en el repo
 *.log
+Claude outputs/
