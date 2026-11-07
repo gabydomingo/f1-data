@@ -7,8 +7,8 @@ para el análisis agregado.
 
 **[Dashboard interactivo](https://f1-data-two.vercel.app)** · **[Análisis en Looker Studio](https://datastudio.google.com/reporting/08593df1-5291-419c-847a-ce256097384e)**
 
-<!-- Reemplazar por capturas propias -->
-![Dashboard](docs/screenshot.png)
+<img width="1920" height="911" alt="cap-web" src="https://github.com/user-attachments/assets/8b1681f6-43f2-410a-b0e9-d02235731de9" />
+
 
 ---
 
@@ -68,6 +68,14 @@ permite que el job semanal actualice una sola carrera.
 lateral sale de cuánto gira el rumbo del auto por metro recorrido; la longitudinal, de la variación de
 velocidad respecto a la distancia. Ambas se miden sobre una base de 20 metros porque el muestreo es
 irregular —de 4 cm a 46 m entre muestras— y con vecinos inmediatos el ruido de posición domina.
+
+**Un solo modelo 3D, iluminación por escudería.** El visor muestra siempre el mismo monoplaza y lo
+que cambia con el piloto es el color de la luz de acento y del entorno. Tener un modelo por equipo
+significaría once archivos de unos 3 MB cada uno, con licencias y autores distintos, y con el
+problema de fondo de que casi todos los modelos disponibles vienen con la jerarquía aplanada: sin
+nodos separados no hay zonas clickeables, ni LED de cambio, ni alerón de DRS animado. El modelo
+elegido es la excepción, y esa estructura es justamente lo que hace posible la interacción. El panel
+de información lo aclara: el auto es representativo, los datos son del piloto seleccionado.
 
 **Dos consumidores, un mismo data lake.** La aplicación web lee Parquet directo de S3 porque necesita
 la telemetría cruda de una vuelta puntual con baja latencia. El dashboard de BI consume BigQuery porque
@@ -236,6 +244,8 @@ Conviene usar un usuario IAM con permiso de lectura únicamente sobre el bucket.
 - **El dashboard web requiere pantalla de escritorio.** Muestra cuatro paneles simultáneos; en móvil
   avisa en lugar de romperse.
 - **Las fuerzas G son una estimación** derivada de la trayectoria, no una medición del auto.
+- **El monoplaza del visor no cambia según la escudería**, solo la iluminación de la escena. Ver la
+  sección de arquitectura.
 
 ---
 
