@@ -103,9 +103,12 @@ def train_and_export_model():
         if col in df.columns:
             df[col] = df[col].astype(str)
 
+    # Salir con return acá devolvía 0 y el paso siguiente seguía como si se
+    # hubiera entrenado. Es la misma trampa que la ingesta: el único momento
+    # en que esto se puede ver es ahora.
     if df.empty:
         print(f"ERROR: no hay vueltas para {YEARS}")
-        return
+        raise SystemExit(1)
 
     circuitos = sorted(df["GrandPrix"].unique())
     print(f"INFO: era {ERA} · {len(df)} vueltas en {len(circuitos)} circuito(s)")

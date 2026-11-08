@@ -56,19 +56,27 @@ def probar(nombre: str, url: str) -> bool:
 
 
 def main() -> None:
-    print("INFO: probando la fuente de timing desde este runner...")
+    print("INFO: probando la fuente de timing desde esta máquina...")
+    print("INFO: se pide la raíz de cada host, así que esto dice si el host "
+          "atiende al cliente, no si tiene los datos de una sesión puntual.")
     resultados = {n: probar(n, u) for n, u in HOSTS.items()}
 
-    if all(resultados.values()):
-        print("INFO: los dos hosts contestan. Si la ingesta igual viene vacía, "
-              "el problema no es de red.")
-    elif any(resultados.values()):
-        print("ALERTA: un host rechaza y el otro no. FastF1 debería caer al "
-              "que funciona, pero va a ir más lento.")
+    # El que manda es el principal. El mirror es el plan B de FastF1, que ya
+    # cae solo cuando el principal responde >=400: que el mirror conteste en
+    # la raíz no alcanza para decir que la ingesta va a andar.
+    if not resultados["principal"]:
+        print("ALERTA: el host principal rechaza a este cliente. Es el caso "
+              "típico de bloqueo por IP de datacenter, y es lo que hace que "
+              "la ingesta salga vacía sin levantar ningún error.")
+        if resultados["mirror"]:
+            print("ALERTA: el mirror sí atiende, pero FastF1 ya reintenta "
+                  "contra él solo. Si la ingesta igual viene vacía, el mirror "
+                  "tampoco tiene estas sesiones.")
+    elif all(resultados.values()):
+        print("INFO: los dos hosts atienden. Si la ingesta igual viene vacía, "
+              "el problema no es de alcance de red.")
     else:
-        print("ALERTA: ningún host contesta desde acá. Es el caso típico de "
-              "bloqueo por IP de datacenter: la ingesta va a salir vacía por "
-              "más que el workflow diga que anduvo todo bien.")
+        print("INFO: el host principal atiende, que es el que importa.")
 
 
 if __name__ == "__main__":

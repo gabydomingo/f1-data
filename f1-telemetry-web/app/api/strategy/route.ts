@@ -13,9 +13,16 @@ const s3Client = new S3Client({
 
 const BUCKET_NAME = "f1-telemetry-datalake-gabriel";
 const KEY_PREDICCIONES = "data/gold/predicciones.json";
-// El modelo está partido por era reglamentaria: se prueban las claves
-// conocidas y se usa la primera que exista.
-const KEYS_METRICAS = ["models/metrics_2024-2025.json", "models/metrics_2026.json"];
+// El modelo está partido por era reglamentaria: 2024 y 2025 comparten
+// reglamento, 2026 estrena autos y motores.
+//
+// Antes acá se probaban las claves conocidas y se usaba la primera que
+// existiera. Como metrics_2024-2025.json siempre está, una carrera de 2026
+// devolvía las métricas de la era vieja y el modelo 2026 era inalcanzable.
+// Se elige por año, con el mismo corte que usan los scripts y el workflow.
+function eraDe(year: number): string {
+  return year >= 2026 ? "2026" : "2024-2025";
+}
 
 type Prediccion = {
   year: number;
@@ -30,10 +37,11 @@ type Prediccion = {
   degradacion_s_vuelta: number;
 };
 
-// Los dos archivos solo cambian cuando corre el pipeline: se cachean en
-// memoria del proceso para no bajarlos en cada request.
-let cache: { predicciones: Prediccion[]; resumen: unknown; modelo: unknown; hasta: number } | null =
-  null;
+// Los archivos solo cambian cuando corre el pipeline: se cachean en memoria
+// del proceso para no bajarlos en cada request. Las métricas van en su propio
+// cache por era, porque ahora dependen del año que se pida.
+let cachePred: { predicciones: Prediccion[]; resumen: unknown; hasta: number } | null = null;
+const cacheMetricas = new Map<string, { modelo: unknown; hasta: number }>();
 const TTL_MS = 10 * 60 * 1000;
 
 async function leerJson(key: string) {
@@ -43,26 +51,32 @@ async function leerJson(key: string) {
   return JSON.parse(texto);
 }
 
-async function cargar() {
-  if (cache && Date.now() < cache.hasta) return cache;
+async function cargarPredicciones() {
+  if (cachePred && Date.now() < cachePred.hasta) return cachePred;
 
   const pred = await leerJson(KEY_PREDICCIONES);
+  const { predicciones, ...resumen } = pred;
+  cachePred = { predicciones, resumen, hasta: Date.now() + TTL_MS };
+  return cachePred;
+}
 
-  // Las métricas son opcionales: si el modelo no se exportó todavía,
-  // la tarjeta igual puede mostrar la predicción.
+async function cargarMetricas(year: number) {
+  const era = eraDe(year);
+  const guardado = cacheMetricas.get(era);
+  if (guardado && Date.now() < guardado.hasta) return guardado.modelo;
+
+  // Son opcionales: si esa era todavía no se entrenó, la tarjeta igual
+  // muestra la predicción. No se cae a la otra era a propósito: un null es
+  // honesto, las métricas del reglamento equivocado no.
   let modelo: unknown = null;
-  for (const key of KEYS_METRICAS) {
-    try {
-      modelo = await leerJson(key);
-      break;
-    } catch {
-      // Esa era no está publicada en el bucket: se prueba la siguiente.
-    }
+  try {
+    modelo = await leerJson(`models/metrics_${era}.json`);
+  } catch {
+    // Esa era no está publicada en el bucket.
   }
 
-  const { predicciones, ...resumen } = pred;
-  cache = { predicciones, resumen, modelo, hasta: Date.now() + TTL_MS };
-  return cache;
+  cacheMetricas.set(era, { modelo, hasta: Date.now() + TTL_MS });
+  return modelo;
 }
 
 export async function GET(request: Request) {
@@ -72,7 +86,10 @@ export async function GET(request: Request) {
     const gp = searchParams.get("gp");
     const driver = searchParams.get("driver")?.toUpperCase();
 
-    const { predicciones, resumen, modelo } = await cargar();
+    const [{ predicciones, resumen }, modelo] = await Promise.all([
+      cargarPredicciones(),
+      cargarMetricas(year),
+    ]);
 
     const prediccion =
       gp && driver

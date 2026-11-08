@@ -1,16 +1,25 @@
 name: F1 Data Engineering Pipeline
 
+# Este workflow NO ingesta. La fuente de timing de la F1 (livetiming.formula1.com)
+# devuelve 403 a las IPs de los runners de GitHub: está verificado en el log de
+# la corrida #25 y se puede volver a comprobar con src/diagnostico_fuente.py.
+#
+# Por eso la ingesta corre en una máquina con IP de casa, que sí pasa, y sube el
+# silver al bucket. De ahí para arriba —entrenar, predecir, catálogo— no hace
+# falta la fuente: todo sale de S3, y eso sí vive acá.
+#
+# El flujo local, antes de disparar esto:
+#     python src/ingesta_carreras.py
+#     python src/transformacion_carrera.py
+#     python src/sincronizar_s3.py --que silver
+
 on:
   workflow_dispatch:
     inputs:
       year:
-        description: "Temporada a procesar"
+        description: "Temporada cuya era entrenar (2024/2025 van juntas, 2026 aparte)"
         required: false
         default: "2026"
-      gps:
-        description: "Circuitos separados por coma (vacío = todo el calendario corrido)"
-        required: false
-        default: ""
   schedule:
     # Lunes 12:00 UTC (09:00 ART). Las carreras corren el domingo.
     #
@@ -29,16 +38,12 @@ permissions:
   contents: read
 
 jobs:
-  run-pipeline:
+  procesar:
     runs-on: ubuntu-latest
-    # Alto a propósito: una corrida semanal con el cache de FastF1 caliente
-    # tarda minutos, pero la primera —o un backfill de temporada entera—
-    # descarga cada sesión de cero. Es un tope de seguridad, no un objetivo.
-    timeout-minutes: 330
+    timeout-minutes: 60
 
     env:
       F1_YEAR: ${{ github.event.inputs.year || '2026' }}
-      F1_GPS: ${{ github.event.inputs.gps || '' }}
       BUCKET: s3://f1-telemetry-datalake-gabriel
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -56,63 +61,40 @@ jobs:
           python-version: "3.14"
           cache: "pip"
 
-      - name: Configurar Java 17
-        uses: actions/setup-java@v4
-        with:
-          distribution: "temurin"
-          java-version: "17"
-
-      # Sin esto, cada corrida vuelve a bajar la sesión entera de la API de
-      # timing. Es la diferencia entre minutos y decenas de minutos.
-      - name: Restaurar cache de FastF1
-        uses: actions/cache@v4
-        with:
-          path: data/cache
-          key: fastf1-${{ env.F1_YEAR }}-${{ github.run_id }}
-          restore-keys: |
-            fastf1-${{ env.F1_YEAR }}-
-            fastf1-
-
       - name: Instalar dependencias
         run: pip install -r requirements.txt
 
       - name: Preparar sistema de archivos
-        run: mkdir -p data/cache data/raw data/silver data/gold models
+        run: mkdir -p data/cache data/silver data/gold models
 
-      # Dos descargas, las dos chicas y las dos necesarias:
+      # Sin "|| true" a propósito. Si la bajada falla, abajo se entrena sobre
+      # una carpeta vacía o a medias y se publican métricas calculadas sobre
+      # datos que no son los del lake. Que rompa acá es el comportamiento
+      # correcto: es el único momento en que el error todavía se ve.
       #
-      # - laps: el modelo se entrena con la temporada completa. Sin esto
-      #   aprendería solo de la carrera del fin de semana.
+      # - laps: el modelo se entrena con la temporada completa.
       # - gold: predicciones.py conserva las predicciones de las otras eras y
-      #   reemplaza solo las suyas; si el archivo no está, las borra. Y
-      #   catalogo.py reusa de ahí las calidades de posición ya medidas.
+      #   reemplaza solo las suyas; si el archivo no está, las borra.
       #
-      # silver/telemetry NO se baja: son más de 1 GB y el catálogo lista sus
+      # silver/telemetry NO se baja: es más de 1 GB y el catálogo lista sus
       # particiones directamente de S3 (F1_FUENTE=s3).
-      - name: Traer silver y gold existentes desde S3
+      - name: Traer silver y gold desde S3
         run: |
-          aws s3 sync $BUCKET/data/silver/laps ./data/silver/laps --no-progress || true
-          aws s3 sync $BUCKET/data/gold ./data/gold --no-progress || true
+          aws s3 sync $BUCKET/data/silver/laps ./data/silver/laps --no-progress
+          aws s3 sync $BUCKET/data/gold ./data/gold --no-progress
 
-      # Informativo, no corta la corrida. Deja escrito en el log si la fuente
-      # de timing atiende a este runner: FastF1 se guarda esa respuesta y solo
-      # deja un WARNING, asi que sin este paso no hay forma de saberlo.
-      - name: Diagnostico de la fuente
-        continue-on-error: true
-        run: python src/diagnostico_fuente.py
-
-      - name: Ingesta (Bronze Layer)
-        run: python src/ingesta_carreras.py
-
-      - name: Transformación (Silver Layer)
-        run: python src/transformacion_carrera.py
+      - name: Verificar que el silver llegó
+        run: |
+          archivos=$(find data/silver/laps -name "*.parquet" | wc -l)
+          echo "Parquets de vueltas descargados: $archivos"
+          if [ "$archivos" -eq 0 ]; then
+            echo "ERROR: silver/laps vino vacío. No se entrena sobre la nada."
+            exit 1
+          fi
 
       # El modelo se entrena por era reglamentaria: 2024 y 2025 comparten
       # autos, desde 2026 hay reglamento nuevo. Mezclarlas promedia dos
       # comportamientos de degradación que no tienen por qué parecerse.
-      #
-      # Sin exportar F1_YEARS, los scripts usan su default (2024,2025) y el
-      # pipeline terminaría ingiriendo 2026 pero entrenando la era vieja.
       - name: Entrenar modelo y predecir estrategia
         run: |
           if [ "$F1_YEAR" -ge 2026 ]; then
@@ -124,9 +106,9 @@ jobs:
           python src/entrenamiento_modelo.py
           python src/predicciones.py
 
-      # Va después de la transformación: el catálogo tiene que ver la carrera
-      # nueva ya particionada. Sin este paso los datos llegan a S3 pero el
-      # dashboard no los muestra, porque sus selectores salen de acá.
+      # Lista las particiones de telemetría directo del bucket, sin bajarlas.
+      # Sin este paso los datos llegan a S3 pero el dashboard no los muestra,
+      # porque sus selectores salen del catálogo.
       - name: Regenerar catálogo (Gold Layer)
         env:
           F1_FUENTE: s3
@@ -135,20 +117,16 @@ jobs:
 
       - name: Verificar salida
         run: |
-          echo "--- silver/telemetry generado en esta corrida ---"
-          find data/silver/telemetry -name "*.parquet" | head -20
           echo "--- gold ---"
-          ls -la data/gold || echo "sin gold"
+          ls -la data/gold
+          echo "--- modelos ---"
+          ls -la models
           echo "--- carreras con datos en el catálogo ---"
           python -c "import json;c=json.load(open('data/gold/catalogo.json'));print(sum(1 for x in c['circuitos'] if x['tiene_datos']),'de',len(c['circuitos']))"
-          echo "--- peso ---"
-          du -sh data/raw data/silver data/gold models
 
-      # Sólo silver, gold y modelos. El bronze y el cache se quedan en el
-      # runner: son intermedios y el cache pesa más que todo lo demás junto.
-      - name: Sincronizar a S3
+      # Solo lo que este workflow produce. El silver lo sube la máquina que
+      # ingesta, no este job.
+      - name: Sincronizar gold y modelos a S3
         run: |
-          aws s3 sync ./data/silver $BUCKET/data/silver --no-progress \
-            --exclude "*.crc" --exclude "*_SUCCESS"
           aws s3 sync ./data/gold $BUCKET/data/gold --no-progress
           aws s3 sync ./models $BUCKET/models --no-progress
