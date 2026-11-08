@@ -94,6 +94,13 @@ jobs:
           aws s3 sync $BUCKET/data/silver/laps ./data/silver/laps --no-progress || true
           aws s3 sync $BUCKET/data/gold ./data/gold --no-progress || true
 
+      # Informativo, no corta la corrida. Deja escrito en el log si la fuente
+      # de timing atiende a este runner: FastF1 se guarda esa respuesta y solo
+      # deja un WARNING, asi que sin este paso no hay forma de saberlo.
+      - name: Diagnostico de la fuente
+        continue-on-error: true
+        run: python src/diagnostico_fuente.py
+
       - name: Ingesta (Bronze Layer)
         run: python src/ingesta_carreras.py
 

@@ -20,6 +20,11 @@ import os
 import fastf1
 import pandas as pd
 
+# Resultado de cada intento. Hace falta distinguir "no había nada que bajar"
+# de "no se pudo bajar nada": sin esa diferencia, una fuente caída se ve igual
+# que una semana sin carreras y el pipeline sigue como si todo anduviera.
+OK, SKIP = "ok", "skip"
+
 CACHE_DIR = "data/cache/"
 RAW_DIR = "data/raw/"
 
@@ -152,7 +157,7 @@ def ingest_race_data(year: int, grand_prix: str, session_type: str = "R", overwr
     # Si el GP ya está, se saltea salvo que se fuerce overwrite.
     if os.path.exists(path_tel) and not overwrite:
         print(f"SKIP: {gp} {year} ya ingestado")
-        return
+        return SKIP
 
     print(f"\nINFO: --- Ingesta {grand_prix} {year} · sesión {session_type} ---")
     session = fastf1.get_session(year, grand_prix, session_type)
@@ -161,6 +166,16 @@ def ingest_race_data(year: int, grand_prix: str, session_type: str = "R", overwr
     session.load(telemetry=True, weather=True, messages=True)
 
     laps_df = session.laps
+
+    # FastF1 no levanta excepción cuando la fuente lo rechaza: loguea un
+    # WARNING y deja la sesión vacía. Si eso no se corta acá, la carrera se
+    # saltea sin que nadie se entere y el workflow termina en verde.
+    if laps_df is None or laps_df.empty:
+        raise RuntimeError(
+            f"{gp} {year}: FastF1 no devolvió ninguna vuelta. Revisar los "
+            "WARNING de arriba y la salida de diagnostico_fuente.py: suele ser "
+            "la fuente de timing rechazando al cliente, no la carrera."
+        )
 
     # FastF1 a veces descarta las vueltas de un piloto al parsear el timing.
     # Sin este chequeo, el piloto desaparece del silver sin dejar rastro.
@@ -212,6 +227,8 @@ def ingest_race_data(year: int, grand_prix: str, session_type: str = "R", overwr
         banderas = eventos[eventos.get("Category", "") == "Flag"] if "Category" in eventos else eventos
         print(f"SUCCESS: eventos -> {path_ev} ({len(eventos)} mensajes, {len(banderas)} banderas)")
 
+    return OK
+
 
 if __name__ == "__main__":
     TARGET_YEAR = int(os.environ.get("F1_YEAR", 2024))
@@ -232,8 +249,32 @@ if __name__ == "__main__":
     print(f"INFO: {len(CALENDARIO)} carreras a procesar en {TARGET_YEAR} "
           f"(overwrite={overwrite})")
 
+    # Un calendario vacío no es una temporada sin carreras: es la fuente que
+    # no contestó. Seguir desde acá republica lo viejo como si fuera nuevo.
+    if not CALENDARIO:
+        print(f"ERROR: el calendario de {TARGET_YEAR} vino vacío.")
+        raise SystemExit(1)
+
+    conteo = {OK: 0, SKIP: 0}
+    fallidas = []
+
     for gp in CALENDARIO:
         try:
-            ingest_race_data(TARGET_YEAR, gp, overwrite=overwrite)
+            conteo[ingest_race_data(TARGET_YEAR, gp, overwrite=overwrite)] += 1
         except Exception as e:
-            print(f"ERROR: falló la ingesta de {gp}. Detalle: {e}")
+            fallidas.append(gp)
+            print(f"ERROR: falló la ingesta de {gp}. Detalle: {type(e).__name__}: {e}")
+
+    print(f"\nRESUMEN: {conteo[OK]} ingestadas, {conteo[SKIP]} ya estaban, "
+          f"{len(fallidas)} fallidas")
+    if fallidas:
+        print(f"RESUMEN: fallaron -> {', '.join(fallidas)}")
+
+    # Que falle una carrera suelta es ruido de la fuente y no justifica tirar
+    # abajo la corrida. Que fallen todas las que se intentaron es la fuente
+    # caída, y eso sí tiene que romper el build: si este script sale 0, los
+    # pasos de abajo reentrenan y publican sobre datos que no se movieron.
+    if fallidas and not conteo[OK]:
+        print("ERROR: no se pudo ingestar ninguna de las carreras intentadas. "
+              "No se sigue.")
+        raise SystemExit(1)
